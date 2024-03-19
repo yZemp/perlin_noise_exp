@@ -6,7 +6,7 @@ from my_stats import sturges
 
 noise = PerlinNoise(octaves = 4)
 
-arrx = np.linspace(0, 100, 100_000)
+arrx = np.linspace(0, 3, 100_000)
 arrnoise = [noise(x) for x in arrx]
 
 plt.hist(arrnoise, sturges(arrnoise))
